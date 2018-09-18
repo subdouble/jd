@@ -1,0 +1,152 @@
+.nowd{
+	overflow: hidden;
+}
+
+.nowd-ban{
+	height: 65px;
+}
+
+.ban-center{
+	width: 1190px;
+	margin: 0 auto 20px;
+	text-align: center;
+	overflow: hidden;
+}
+
+.ban-text{
+	height: 45px;
+	display: inline-block;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.ban-text>div{
+	width: 50px;
+	height: 3px;
+	background: #222;
+	margin: 21px 0;
+	float: left;
+}
+
+.ban-text h3{
+	display: block;
+	float: left;
+	width: 150px;
+	height: 45px;
+	line-height: 45px;
+	font-size: 28px;
+	font-weight: normal;
+	text-align: center;
+	margin: 0 auto 20px;
+	color: #222;
+}
+
+.nowd-con{
+	width: 1190px;
+	margin: 0 auto;
+	/*background: red;*/
+}
+
+.nowd-con .item-list{
+	margin: 0 -5px 0;
+}
+
+.nowd-con .item{
+	width: 230px;
+	height: 305px;
+	/*background: green;*/
+	background: #fff;
+	float: left;
+	margin: 0 5px 10px;
+	position: relative;
+}
+
+.nowd-con .item-link{
+	width: 100%;
+	height: 100%;
+	display: block;
+	float: left;
+}
+
+.nowd-con .item-img{
+	width: 170px;
+	height: 170px;
+	margin: 30px 30px 20px 30px;
+	overflow: hidden;
+}
+
+.nowd-con .item-text1{
+	font-size: 14px;
+	height: 36px;
+	line-height: 18px;
+	color: #333;
+	padding: 0 16px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;
+}
+
+.nowd-con .item-text2{
+	font-size: 14px;
+	color: #E33333;
+	text-align: center;
+	margin-top: 10px;
+}
+
+.nowd-con .item-text2 i{
+	font-size: 12px;
+	font-style: normal;
+}
+
+.nowd-con .item-text2 span{
+	
+}
+
+.nowd-con .item-find{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100px;
+	/*background: yellow;*/
+}
+
+.nowd .find-circle{
+	width: 60px;
+	height: 60px;
+	cursor: pointer;
+	color: #fff;
+	line-height: 60px;
+	text-align: center;
+	margin: 20px auto;
+	background: #222;
+	border-radius: 50%;
+	transform: scale(0);
+	opacity: 0.8;
+}
+
+.nowd .item:hover .item-text1, .nowd .item:hover .item-text2{
+	color: #E32F2F;
+}
+
+.nowd .item:hover .item-link{
+	transition: opacity 0.4s;
+	opacity: 0.8;
+}
+
+.nowd .item:hover .item-text1, .nowd .item:hover .item-text2{
+	transition: opacity 0.4s;
+	opacity: 0.5;
+}
+
+.nowd .item:hover .find-circle{
+	transition: transform 0.4s;
+	transform: scale(1);
+}
+
+.nowd .find-circle:hover{
+	transition: opacity 0.4s;
+	opacity: 1;
+}

@@ -1,0 +1,210 @@
+.spike{
+	height: 275px;
+	margin-bottom: 30px;
+}
+
+.spike-center{
+	width: 1190px;
+	height: 100%;
+	background: #fff;
+	margin: 0 auto;
+}
+
+.spike .spike-left{
+	width: 190px;
+	height: 100%;
+	background: #e83632;
+	float: left;
+}
+
+.spike .spike-left a{
+	width: 100%;
+	height: 100%;
+	display: block;
+	color: #fff;
+}
+
+.spike .spike-left .text1{
+	width: 100%;
+	text-align: center;
+	margin-top: 42px;
+	font-size: 34px;
+}
+
+.spike .spike-left .text2{
+	font-size: 20px;
+	width: 100%;
+	text-align: center;
+	/*margin-top: 2px;*/
+	color: rgba(255, 255, 255, 0.5);
+}
+
+.spike .spike-left .lightning{
+	background-image: url(../img/lightning-white.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	display: block;
+	margin-top: 8px;
+	width: 100%;
+	height: 33px;
+}
+
+.spike .spike-left .text3{
+	width: 100%;
+	text-align: center;
+	font-size: 16px;
+	margin-top: 10px;
+}
+
+.spike .spike-left .countdown{
+	width: 135px;
+	height: 40px;
+	margin: 16px auto;
+	/*background: white;*/
+}
+
+.spike .spike-left .countdown>div{
+	float: left;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	background: #2f3430;
+	margin-right: 5px;
+}
+
+.spike .spike-left .countdown div span{
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.spike .spike-right{
+	width: 1000px;
+	height: 100%;
+	/*background: green;*/
+	float: left;
+}
+
+.spike .spike-right .carousel1{
+	float: left;
+	width: 799px;
+	border-right: solid 1px #f0f0f0;
+	height: 275px;
+}
+
+.spike .spike-right .carousel1 .caro-con{
+	width: 800px;
+	height: 100%;
+}
+
+.spike .spike-right .carousel1 .item{
+	float: left;
+	width: 200px;
+	height: 275px;
+	/*background: lightskyblue;*/
+	position: relative;
+}
+
+.spike .spike-right .carousel1 .item:hover .pic{
+	opacity: 0.5;
+	transition: opacity 0.5s;
+}
+
+.spike .spike-right .carousel1 .caro-con .item-link{
+	display: block;
+	/*float: left;*/
+	width: 190px;
+	height: 100%;
+	margin: auto;
+	text-align: center;
+}
+
+.spike .spike-right .carousel1 .pic{
+	width: 140px;
+	height: 140px;
+	margin: 40px auto auto auto;
+}
+
+.spike .spike-right .carousel1 .text{
+	width: 160px;
+	line-height: 30px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	margin: 12px auto auto auto;
+}
+
+.spike .spike-right .carousel1 .price{
+	width: 160px;
+	height: 20px;
+	padding: 1px;
+	background: #e6382f;
+	line-height: 20px;
+	text-align: center;
+	margin: 10px auto auto auto;
+}
+
+.spike .spike-right .carousel1 .price>div{
+	float: left;
+	width: 80px;
+	height: 20px;
+	font-weight: bold;
+}
+
+.spike .spike-right .carousel1 .price-new{
+	color: #fff;
+	font-size: 14px;
+}
+
+.spike .spike-right .carousel1 .price-old{
+	background: #fff;
+	color: #b7bcb8;
+	font-size: 12px;
+	font-weight: normal !important;
+}
+
+.spike .spike-right .carousel1 .item::after{
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 1px;
+	height: 100%;
+	background: #F0F0F0;
+}
+
+.spike .spike-right .carousel2{
+	float: left;
+	width: 180px;
+	height: 260px;
+	padding: 8px 10px 7px;
+	position: relative;
+}
+
+.spike .spike-right .carousel2 .con{
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+
+.spike .spike-right .carousel2 .circle-box{
+	/*width: 28px;
+	height: 14px;*/
+	/*background: yellow;*/
+	position: absolute;
+	bottom: 16px;
+	left: 50%;
+	margin-left: -14px;
+	text-align: center;
+}
+
+.spike .spike-right .carousel2 .circle-box div{
+	width: 6px;
+	height: 6px;
+	float: left;
+	margin: 0 2px;
+	background: green;
+	background: #c0c0c0;
+	border-radius: 50%;
+}
