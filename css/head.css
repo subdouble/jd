@@ -1,0 +1,187 @@
+.head{
+	width: 100%;
+	height: 140px;
+	/*background: red;*/
+}
+
+.head .head-center{
+	height: 140px;
+	width: 1190px;
+	margin: 0 auto;
+	position: relative;
+	/*background: greenyellow;*/
+}
+
+.head .logo{
+	position: absolute;
+	left: 0;
+	top: -31px;
+	width: 190px;
+	height: 170px;
+	box-shadow: 0 -12px 10px rgba(0, 0, 0, 0.2);
+	background: #fff;
+	border-bottom: 1px solid #ededed;
+}
+
+.head .logo .logo-link{
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	overflow: hidden;
+	display: block;
+	width: 190px;
+	height: 170px;
+	background-image: url(../img/header.png);
+}
+
+.search-in{
+	height: 60px;
+	width: 1190px;
+	position: relative;
+}
+
+.search-box{
+	position: absolute;
+	left: 320px;
+	top: 25px;
+	width: 550px;
+	height: 35px;
+	background: #7FFFD4;
+}
+
+.searchwords a:hover{
+	color: #E32F2F;
+}
+
+.search-text{
+	position: absolute;
+	left: 0;
+	top: 0;
+	padding: 4px 44px 4px 4px;
+	width: 450px;
+	border: 1px solid;
+	line-height: 25px;
+	font-size: 14px;
+	color: #989898;
+	background: #fff;
+}
+
+.search-camera{
+	position: absolute;
+	right: 65px;
+	top: 10px;
+	width: 19px;
+	height: 15px;
+	background-image: url(../img/search.png);
+}
+
+.search-icon{
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 50px;
+	height: 35px;
+	background: #F10215;
+}
+
+.cart{
+	position: absolute;
+	right: 99px;
+	top: 25px;
+}
+
+.cart-in{
+	width: 188px;
+	height: 33px;
+	background: #fff;
+	text-align: center;
+	line-height: 33px;
+	border: 1px solid #E3E4E5;
+	position: relative;
+}
+
+.cart-in a{
+	color: #f10214;
+}
+
+.quantity{
+	position: absolute;
+	top: 5px;
+	left: 140px;
+	font-size: 12px;
+	line-height: 12px;
+	text-align: center;
+	color: #fff;
+	background: #F10215;
+	width: 12px;
+	height: 12px;
+	border-radius: 50%;
+}
+
+.searchwords{
+	position: absolute;
+	left: 320px;
+	top: 65px;
+	width: 550px;
+	height: 20px;
+	line-height: 20px;
+	text-align: center;
+}
+
+.searchwords a{
+	float: left;
+	margin-right: 10px;
+	color: #999;
+}
+
+.navitems{
+	position: absolute;
+	left: 200px;
+	bottom: 0;
+	width: 790px;
+	height: 40px;
+	padding-top: 20px;
+}
+
+.navitems .con{
+	float: left;
+	/*width: 262px;*/
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+}
+
+.navitems .separate{
+	float: left;
+	width: 1px;
+	height: 10px;
+	background: #ccc;
+	margin: 15px -10px 0 20px;
+}
+
+.navitems .con a{
+	display: block;
+	float: left;
+	margin-left: 30px;
+	height: 100%;
+	/*width: 87px;*/
+	font-size: 14px;
+	color: #333;
+}
+
+.navitems .con a:hover{
+	color: #E32F2F;
+}
+
+.full-redu{
+	position: absolute;
+	right: 0;
+	bottom: 10px;
+	width: 190px;
+	height: 40px;
+}
+
+.full-redu a{
+	display: block;
+	width: 190px;
+	height: 40px;
+}
