@@ -18,6 +18,49 @@
 	line-height: 30px;
 }
 
+.header .addr{
+	position: relative;
+}
+
+.header .addr:hover .addr-list{
+	display: block;
+}
+
+.header .addr .addr-list{
+	display: none;
+	position: absolute;
+	top: 30px;
+	left: 0;
+	z-index: 10;
+	width: 300px;
+	/*height: 300px;*/
+	overflow: hidden;
+	padding: 10px;
+	line-height: 24px;
+	background: #fff;
+}
+
+.addr-item{
+	width: 60px;
+	float: left;
+	padding: 2px 0;
+	text-align: center;
+}
+
+.addr-item:hover{
+	background: #F4F4F4;
+}
+
+.addr-item:hover a{
+	color: #E32F2F;
+}
+
+.addr-item a{
+	padding: 0 8px;
+	color: #999;
+	text-align: center;
+}
+
 .header-left .addr-pic img{
 	height: 14px;
 	width: 14px;
@@ -88,11 +131,123 @@
 }
 
 .header-right .item>.down{
-	height: 28px;
+	height: 30px;
 	padding-right: 20px;
-	border: 1px solid #e3e4e5;
+	/*border: 1px solid #e3e4e5;*/
 }
 
 .header-right .down:hover{
 	background: #fff;
+}
+
+.header-right li>div{
+	position: relative;
+}
+
+.mjd{
+	position: relative;
+}
+
+.header .mjd:hover .mjd-con{
+	display: block;
+}
+
+.header .comp:hover .comp-con{
+	display: block;
+}
+
+.header .cust:hover .cust-con{
+	display: block;
+}
+
+.header .wnav:hover .wnav-con{
+	display: block;
+}
+
+.header .mobj:hover .mobj-con{
+	display: block;
+}
+
+.mjd-con{
+	display: none;
+	position: absolute;
+	top: 30px;
+	left: 0;
+	z-index: 10;
+	width: 280px;
+	/*height: 500px;*/
+	background: #fff;
+}
+
+.down>div a{
+	color: #999;
+}
+
+.down>div a:hover{
+	color: #E32F2F;
+}
+
+.down>div>div{
+	padding: 10px 0 10px 15px;
+	overflow: hidden;
+	line-height: 24px;
+	color: #999;
+}
+
+.down>div .left, .down>div .right{
+	width: 126px;
+	float: left;
+}
+
+.down>div .con-btm{
+	border-top: 1px solid #f1f1f1;
+}
+
+.comp-con{
+	display: none;
+	position: absolute;
+	top: 30px;
+	left: 0;
+	z-index: 10;
+	width: 280px;
+	/*height: 500px;*/
+	background: #fff;
+}
+
+.cust-con{
+	display: none;
+	position: absolute;
+	top: 30px;
+	left: 0;
+	z-index: 10;
+	width: 280px;
+	/*height: 500px;*/
+	background: #fff;
+}
+
+.wnav-con{
+	display: none;
+	position: absolute;
+	top: 30px;
+	left: 0;
+	z-index: 12;
+	width: 280px;
+	/*height: 500px;*/
+	background: #fff;
+}
+
+.mobj .qr-img img{
+	width: 68px;
+	height: 68px;
+}
+
+.mobj-con{
+	/*display: none;*/
+	position: absolute;
+	top: 30px;
+	left: 0;
+	z-index: 10;
+	/*width: 280px;*/
+	/*height: 500px;*/
+	/*background: #fff;*/
 }

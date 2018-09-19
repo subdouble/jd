@@ -1,0 +1,98 @@
+.header-bck{
+	height: 30px;
+	line-height: 30px;
+	color: #999;
+	border-bottom: 1px solid #ddd;
+	background: #E3E4E5;
+}
+
+.header-bck li{
+	float: left;
+}
+
+.header{
+	width: 1190px;
+	height: 30px;
+	margin: auto;
+	height: 30px;
+	line-height: 30px;
+}
+
+.header-left .addr-pic img{
+	height: 14px;
+	width: 14px;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.header-addr, .header-addr .addr{
+	float: left;
+}
+
+.header-addr .addr>div{
+	/*float: left;*/
+	display: inline-block;
+}
+
+.header-addr .addr{
+	margin-left: 200px;
+	padding: 0 8px;
+}
+
+.header-addr .addr:hover{
+	background: #fff;
+}
+
+.header-addr .addr .addr-pic{
+	position: relative;
+	top: -1px;
+}
+
+.header-right{
+	float: right;
+}
+
+.header-right .item{
+	float: left;
+	
+}
+
+.header-right .bar{
+	margin: 11px 5px 0;
+	float: left;
+	width: 1px;
+	height: 10px;
+	background: #ccc;
+	/*background: red;*/
+}
+
+.header-right .item .register{
+	color: #f10215;
+}
+
+.header-right .item .register:hover{
+	opacity: 0.8;
+}
+
+.header-right .item .login:hover{
+	color: #f10215;
+}
+
+.header-right .log{
+	margin-right: 8px;
+}
+
+.header-right .item-in{
+	padding-right: 7px;
+	padding-left: 7px;
+}
+
+.header-right .item>.down{
+	height: 28px;
+	padding-right: 20px;
+	border: 1px solid #e3e4e5;
+}
+
+.header-right .down:hover{
+	background: #fff;
+}
