@@ -475,46 +475,17 @@
 	/*background: green;*/
 }
 
-/*.ban-right .service .serv-list .serv-ls img{
+.ban-right .service .serv-list .serv-ls img{
 	width: 20px;
 	height: 20px;
-}*/
-
-.ban-right .service .serv-list .serv-ls .iconfont{
-	font-style: normal;
-	font-size: 20px;
-	display: block;
-	width: 20px;
-	height: 20px;
-	margin: 4px auto;
-}
-
-.ban-right .service .serv-list .serv-ls .serv-text{
-	display: block;
-	height: 25px;
-	line-height: 25px;
-	border-bottom: 2px solid #fff;
-	color: #BEA68D;
 }
 
 .ban-right .service .serv-list .serv-ls .serv-link{
-	position: relative;
 	display: block;
-	color: #BEA68D;
-	text-align: center;
-	/*padding-top: 6px;*/
-}
-
-.ban-right .service .serv-list .serv-ls .serv-link:hover{
-	color: #E32F2F;
-}
-
-.ban-right .service .serv-list .serv-ls .serv-link:hover .serv-text{
-	color: #E32F2F;
+	padding-top: 6px;
 }
 
 .ban-right .service .serv-list .serv-ls{
-	position: relative;
 	float: left;
 	width: 42px;
 	height: 55px;
@@ -522,11 +493,11 @@
 	/*background: red;*/
 }
 
-/*.ban-right .serv-list .serv-ls a{
+.ban-right .serv-list .serv-ls a{
 	color: #BEA68D
-}*/
+}
 
-.ban-right .service::after{
+.ban-right .service:after{
 	content: "";
     position: absolute;
     top: 0;

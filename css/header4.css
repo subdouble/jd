@@ -148,47 +148,6 @@
 	position: relative;
 }
 
-.mjd .iconfont{
-	position: absolute;
-    right: 10px;
-    top: 10px;
-    width: 12px;
-    height: 12px;
-    line-height: 12px;
-    font-size: 24px;
-    font-style: normal;
-}
-
-.comp .iconfont{
-	position: absolute;
-    right: 10px;
-    top: 10px;
-    width: 12px;
-    height: 12px;
-    line-height: 12px;
-    font-size: 24px;
-    font-style: normal;
-}
-.cust .iconfont{
-	position: absolute;
-    right: 10px;
-    top: 10px;
-    width: 12px;
-    height: 12px;
-    line-height: 12px;
-    font-size: 24px;
-    font-style: normal;
-}
-.wnav .iconfont{
-	position: absolute;
-    right: 10px;
-    top: 10px;
-    width: 12px;
-    height: 12px;
-    line-height: 12px;
-    font-size: 24px;
-    font-style: normal;
-}
 .header .mjd:hover .mjd-con{
 	display: block;
 }

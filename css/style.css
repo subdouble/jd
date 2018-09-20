@@ -28,3 +28,16 @@ ul, li{
 	display: block;
 	clear: both;
 }
+
+@font-face {
+  font-family: 'iconfont';  /* project id 845280 */
+  src: url('//at.alicdn.com/t/font_845280_0rgh8cf8hnkb.eot');
+  src: url('//at.alicdn.com/t/font_845280_0rgh8cf8hnkb.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_845280_0rgh8cf8hnkb.woff') format('woff'),
+  url('//at.alicdn.com/t/font_845280_0rgh8cf8hnkb.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_845280_0rgh8cf8hnkb.svg#iconfont') format('svg');
+}
+
+.iconfont{
+	font-family: iconfont;
+}
