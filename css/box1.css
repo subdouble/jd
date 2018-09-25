@@ -97,6 +97,10 @@
 	height: 107px;
 }
 
+.box1-left .box-con .con .item-img:hover{
+	opacity: 0.8;
+}
+
 .box1-left .box-con .con .item-img{
 	float: left;
 	width: 80px;

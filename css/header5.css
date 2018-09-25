@@ -249,7 +249,7 @@
 	position: absolute;
 	top: 30px;
 	left: 0;
-	z-index: 100;
+	z-index: 10;
 	width: 280px;
 	/*height: 500px;*/
 	background: #fff;
@@ -259,8 +259,8 @@
 	display: none;
 	position: absolute;
 	top: 30px;
-	right: 0;
-	z-index: 100;
+	left: 0;
+	z-index: 10;
 	width: 280px;
 	/*height: 500px;*/
 	background: #fff;
@@ -270,8 +270,8 @@
 	display: none;
 	position: absolute;
 	top: 30px;
-	right: 0;
-	z-index: 100;
+	left: 0;
+	z-index: 12;
 	width: 280px;
 	/*height: 500px;*/
 	background: #fff;

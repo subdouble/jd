@@ -113,6 +113,10 @@
 	margin: 10px auto 0;
 }
 
+.joy-con .item-img:hover{
+	opacity: 0.8;
+}
+
 .joy-con .item-img{
 	width: 110px;
 	height: 110px;

@@ -129,6 +129,10 @@
 	margin: 0 10px 10px 0;
 }
 
+.st-left .item-img:hover{
+	opacity: 0.8;
+}
+
 .st-left .item-img{
 	overflow: hidden;
 }
@@ -153,7 +157,13 @@
 	right: 0;
 }
 
+.st-right .con:hover img{
+	opacity: 0.8;
+}
+
 .st-right .con{
 	position: absolute;
 	left: 20px;
+	background: #fff;
+	font-size: 0;
 }

@@ -45,8 +45,7 @@
 	top: 25px;
 	width: 550px;
 	height: 35px;
-	/*background: #7FFFD4;*/
-	background: #fff;
+	background: #7FFFD4;
 }
 
 .searchwords a:hover{
@@ -57,25 +56,13 @@
 	position: absolute;
 	left: 0;
 	top: 0;
-	/*padding: 4px 44px 4px 4px;*/
+	padding: 4px 44px 4px 4px;
 	width: 450px;
-	height: 100%;
-	/*border: 1px solid transparent;*/
+	border: 1px solid transparent;
 	line-height: 25px;
 	font-size: 14px;
 	color: #989898;
 	background: #fff;
-}
-
-.jd-search{
-	display: block;
-	height: 100%;
-	width: 100%;
-	border: none;
-	outline: none;
-	background: transparent;
-	padding-left: 10px;
-	box-sizing: border-box;
 }
 
 .search-camera{
@@ -118,12 +105,6 @@
 	line-height: 33px;
 	border: 1px solid #E3E4E5;
 	position: relative;
-}
-
-.cart-in .iconfont{
-	font-style: normal;
-	font-size: 16px;
-	color: #f10214;
 }
 
 .cart-in a{
