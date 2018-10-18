@@ -173,7 +173,64 @@
 	display: block;
 	margin: 0 auto;
 	overflow: hidden;
+	position: relative;
 	/*background: green;*/
+}
+
+.box1-mid .box-con .move-box{
+	position: relative;
+	width: 500%;
+	height: 100%;
+	left: -350px;
+}
+
+.box1-mid .box-con .move-item{
+	float: left;
+	width: calc(100% / 5);
+	height: 100%;
+}
+
+.box1-mid .box-con .move-btn{
+	position: absolute;
+	top: 50%;
+	z-index: 20;
+	transform: translateY(-50%);
+	width: 20px;
+	height: 40px;
+	background: rgba(0,0,0,.15);
+	text-align: center;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-webkit-user-select: none;
+}
+
+.box1-mid .box-con .move-left{
+	left: 0;
+	/*margin-left: -20px;*/
+}
+
+.box1-mid .box-con .move-right{
+	right: 0;
+	/*margin-right: -20px;*/
+}
+
+.box1-mid .box-con .move-btn .iconfont{
+	font-style: normal;
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	line-height: 40px;
+	color: hsla(0,0%,100%,.4);
+	color: #fff;
+	font-size: 20px;
+}
+
+.box1-mid .box-con .move-btn:hover{
+	background: #999999;
+}
+
+.box1-mid .box-con .circle-box .active{
+	background: #eb3436;
 }
 
 .box1-mid .box-con .con .con1{
@@ -253,6 +310,10 @@
 	border: 2px solid #b9beba;
 	box-sizing: border-box;
 	margin: 0 1px;
+}
+
+.box1-mid .box-con .circle-box .active{
+	background: #eb3436;
 }
 
 .box1 .box1-right{

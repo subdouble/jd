@@ -66,8 +66,80 @@
 	height: 355px;
 	position: relative;
 	margin: 0 auto;
+	overflow: hidden;
+	position: relative;
 	/*background: yellow;*/
 }
+
+.mi-left .box-con{
+	position: relative;
+}
+
+.mi-left .box-con .move-box{
+	position: relative;
+	width: 500%;
+	height: 100%;
+	left: -350px;
+}
+
+.mi-left .box-con .move-item{
+	float: left;
+	width: calc(100% / 5);
+	height: 100%;
+}
+
+.mi-left .box-con .move-btn{
+	position: absolute;
+	top: 50%;
+	z-index: 20;
+	transform: translateY(-50%);
+	width: 20px;
+	height: 40px;
+	background: rgba(0,0,0,.15);
+	text-align: center;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-webkit-user-select: none;
+}
+
+.mi-left .box-con .move-left{
+	left: 0;
+	/*margin-left: -20px;*/
+}
+
+.mi-left .box-con .move-right{
+	right: 0;
+	/*margin-right: -20px;*/
+}
+
+.mi-left .box-con .move-btn .iconfont{
+	font-style: normal;
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	line-height: 40px;
+	color: hsla(0,0%,100%,.4);
+	color: #fff;
+	font-size: 20px;
+}
+
+.mi-left .box-con .move-btn:hover{
+	background: #999999;
+}
+
+.mi-left .box-con .circle-box .active{
+	background: #eb3436;
+}
+
+
+
+
+
+
+
+
+
+
 
 .mi-left .con-in{
 	height: 355px;
@@ -123,13 +195,14 @@
 	position: absolute;
 	left: 50%;
 	bottom: -26px;
+	z-index: 100;
 	margin-left: -22px;
 	/*width: 50px;
 	height: 30px;*/
 	/*background: #ED713D;*/
 }
 
-.circle{
+.mi .circle{
 	display: inline-block;
 	width: 10px;
 	height: 10px;
@@ -137,6 +210,10 @@
 	border: 2px solid #b9beba;
 	box-sizing: border-box;
 	margin: 0 1px;
+}
+
+.mi-left .box-con .circle-box .active{
+	background: #eb3436;
 }
 
 .mi-mid .con{
@@ -236,3 +313,5 @@
 .mi-right .con2 .item-img{
 	overflow: hidden;
 }
+
+

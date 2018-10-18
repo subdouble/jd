@@ -1,0 +1,33 @@
+.sch-fx{
+	background: #fff;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.2);
+}
+
+.sch-fx .search{
+	width: 1190px;
+	height: 48px;
+	margin: 0 auto;
+}
+
+.sch-fx .search-box{
+	background: #efefef;
+	transform: translateY(-50%);
+}
+
+.sch-fx .search-text{
+	background: #efefef;
+}
+
+.sch-fx .sch-logo{
+	position: absolute;
+	left: 0;
+	top: 4px;
+	background-repeat: no-repeat;
+	background-position: -195px 0;
+	overflow: hidden;
+	display: block;
+	width: 125px;
+	height: 40px;
+	background-image: url(../img/header.png);
+	text-indent: -999px;
+}
