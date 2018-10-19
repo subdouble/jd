@@ -90,8 +90,9 @@ slideRight.onclick = function() {
 
 carousel(".box1-mid");
 carousel(".mi-left");
+carousel(".spike .spike-right .carousel1", false);
 
-function carousel(selector) {
+function carousel(selector, auto = true) {
 	let moveBox = document.querySelector(selector +  " .move-box");
 	console.log(moveBox);
 	let moveLeft = document.querySelector(selector + " .move-left");
@@ -123,13 +124,14 @@ function carousel(selector) {
 		}
 		moveNext++;
 	}
-
-	let moveTimer = setInterval(function() {
-		if(moveFlag) {
-			moveFlag = false;
-			moveFunc();
-		}
-	}, 2000);
+	if(auto){
+		let moveTimer = setInterval(function() {
+			if(moveFlag) {
+				moveFlag = false;
+				moveFunc();
+			}
+		}, 2000);
+	}
 
 	moveBox.addEventListener("transitionend", function() {
 		if(moveBox.style.left == (-(moveCircle.length + 1) * moveStep) + "px") {

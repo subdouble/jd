@@ -90,7 +90,78 @@
 	width: 799px;
 	border-right: solid 1px #f0f0f0;
 	height: 275px;
+	overflow: hidden;
+	position: relative;
 }
+
+.spike .spike-right .carousel1 .circle-box{
+	position: absolute;
+	display: none;
+}
+
+.spike .spike-right .carousel1 .move-box{
+	position: relative;
+	width: 600%;
+	height: 100%;
+	left: -799px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.spike .spike-right .carousel1 .move-item{
+	float: left;
+	width: calc(100% / 6);
+	height: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.spike .spike-right .carousel1 .move-item:last-child{
+	float: right;
+	margin: 0;
+}
+
+.spike .spike-right .carousel1 .move-btn{
+	position: absolute;
+	top: 50%;
+	z-index: 20;
+	transform: translateY(-50%);
+	width: 20px;
+	height: 40px;
+	background: rgba(0,0,0,.15);
+	text-align: center;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-webkit-user-select: none;
+}
+
+.spike .spike-right .carousel1 .move-left{
+	left: 0;
+	/*margin-left: -20px;*/
+}
+
+.spike .spike-right .carousel1 .move-right{
+	right: 0;
+	/*margin-right: -20px;*/
+}
+
+.spike .spike-right .carousel1 .move-btn .iconfont{
+	font-style: normal;
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	line-height: 40px;
+	color: hsla(0,0%,100%,.4);
+	color: #fff;
+	font-size: 20px;
+}
+
+
+
+
+
+
+
 
 .spike .spike-right .carousel1 .caro-con{
 	width: 800px;
