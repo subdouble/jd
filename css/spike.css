@@ -135,6 +135,10 @@
 	-webkit-user-select: none;
 }
 
+.spike .spike-right .carousel1 .move-btn:hover{
+	background: #999999;
+}
+
 .spike .spike-right .carousel1 .move-left{
 	left: 0;
 	/*margin-left: -20px;*/
@@ -257,6 +261,7 @@
 	width: 100%;
 	height: 100%;
 	position: relative;
+	overflow: hidden;
 }
 
 .spike .spike-right .carousel2 .circle-box{
@@ -278,4 +283,27 @@
 	background: green;
 	background: #c0c0c0;
 	border-radius: 50%;
+}
+
+.spike .spike-right .carousel2 img{
+	display: block;
+}
+
+.spike .spike-right .carousel2 .move-box{
+	width: 400%;
+	height: 100%;
+	position: relative;
+	left: -180px;
+}
+
+.spike .spike-right .carousel2 .move-item{
+	float: left;
+}
+
+.spike .spike-right .carousel2 .circle-box .active{
+	background: #eb3436;
+}
+
+.spike .spike-right .carousel2 .move-btn{
+	display: none;
 }

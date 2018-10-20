@@ -88,11 +88,26 @@ slideRight.onclick = function() {
 	nSlide++;
 };
 
-carousel(".box1-mid");
-carousel(".mi-left");
-carousel(".spike .spike-right .carousel1", false);
 
-function carousel(selector, auto = true) {
+
+
+
+
+
+
+
+
+
+
+
+
+carousel(".box1-mid", true, 3000);
+carousel(".mi-left", true, 3000);
+carousel(".spike .spike-right .carousel1", false);
+carousel(".box1-right .box-con", false);
+carousel(".spike-right .carousel2", true, 3000);
+
+function carousel(selector, auto = true, timeStep = 2000) {
 	let moveBox = document.querySelector(selector +  " .move-box");
 	console.log(moveBox);
 	let moveLeft = document.querySelector(selector + " .move-left");
@@ -130,7 +145,7 @@ function carousel(selector, auto = true) {
 				moveFlag = false;
 				moveFunc();
 			}
-		}, 2000);
+		}, timeStep);
 	}
 
 	moveBox.addEventListener("transitionend", function() {
@@ -149,6 +164,7 @@ function carousel(selector, auto = true) {
 
 	moveCircle.forEach(function(val, index) {
 		val.onmouseenter = function() {
+			moveBox.style.transition = "all .5s";
 			moveCircle.forEach(function(val, index) {
 				val.classList.remove("active");
 			})
@@ -175,84 +191,31 @@ function carousel(selector, auto = true) {
 
 }
 
-/*
 
-let moveBox = document.querySelector(".move-box");
-//console.log(moveBox);
-let moveLeft = document.querySelector(".move-left");
-let moveRight = document.querySelector(".move-right");
-//console.log(moveLeft);
-//console.log(moveRight);
-let moveCircle = document.querySelectorAll(".move-circle");
-console.log(moveCircle);
 
-let moveNext = 2;
 
-let moveFlag = true;
 
-let moveStep = 350;
+let tabSwitch = document.querySelectorAll(".box1-left .box-con .tab .tab-link");
+//console.log(tabSwitch);
+let tabSwitchBox = document.querySelectorAll(".box1-left .box-con .tab-switch");
+//console.log(tabSwitchBox);
 
-function moveFunc() {
-	moveBox.style.transition = "all .5s";
-	moveBox.style.left = (-moveNext * moveStep) + "px";
-	moveCircle.forEach(function(val, index) {
-		val.classList.remove("active");
-	})
-	if(moveNext == moveCircle.length + 1) {
-		moveCircle[0].classList.add("active");
-	} else if(moveNext == 0) {
-		moveCircle[moveCircle.length - 1].classList.add("active");
-	} else {
-		moveCircle[moveNext - 1].classList.add("active");
-	}
-	moveNext++;
-}
-
-let moveTimer = setInterval(function() {
-	if(moveFlag) {
-		moveFlag = false;
-		moveFunc();
-	}
-}, 2000);
-
-moveBox.addEventListener("transitionend", function() {
-	if(moveBox.style.left == (-(moveCircle.length + 1) * moveStep) + "px") {
-		moveNext = 2;
-		moveBox.style.transition = "all 0s";
-		moveBox.style.left = -moveStep + "px";
-	}
-	if(moveBox.style.left == "0px") {
-		moveNext = moveCircle.length + 1;
-		moveBox.style.transition = "all 0s";
-		moveBox.style.left = (-moveCircle.length * moveStep) + "px";
-	}
-	moveFlag = true;
-});
-
-moveCircle.forEach(function(val, index) {
-	val.onmouseenter = function() {
-		moveCircle.forEach(function(val, index) {
-			val.classList.remove("active");
+tabSwitch.forEach(function(value, index){
+	value.onmouseenter = function(){
+		tabSwitch.forEach(function(value, index){
+			value.classList.remove("active");
+			tabSwitchBox[index].classList.remove("switch-active");
 		})
-		val.classList.add("active");
-		moveBox.style.left = -(index + 1) * moveStep + "px";
-		moveNext = index + 2;
+		value.classList.add("active");
+		tabSwitchBox[index].classList.add("switch-active");
 	}
 })
 
-moveRight.onclick = function() {
-	if(moveFlag) {
-		moveFlag = false;
-		moveFunc();
-	}
-}
+//carousel(".box1-left .box-con .tab-switch1", false);
+//carousel(".box1-left .box-con .tab-switch2");
 
-moveLeft.onclick = function() {
-	if(moveFlag) {
-		moveFlag = false;
-		moveNext -= 2;
-		moveFunc();
-	}
-}
+let tabSwitchClass = ".box1-left .box-con .tab-switch";
 
-*/
+for(let i = 1; i <= tabSwitch.length; i ++){
+	carousel(tabSwitchClass + i, false);
+}
